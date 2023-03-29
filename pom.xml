@@ -20,6 +20,7 @@
 
         <spring-boot.version>2.7.2</spring-boot.version>
         <mybatis-starter.version>2.2.2</mybatis-starter.version>
+        <hutools.version>5.8.8</hutools.version>
     </properties>
 
     <modules>
@@ -46,6 +47,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutools.version}</version>
+            </dependency>
             <!--Project modules-->
             <dependency>
                 <groupId>ccom.hehan.ai</groupId>

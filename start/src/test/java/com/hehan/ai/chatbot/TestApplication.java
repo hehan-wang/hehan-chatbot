@@ -1,8 +1,9 @@
 package com.hehan.ai.chatbot;
 
+import org.junit.Ignore;
 import org.springframework.boot.SpringApplication;
-import org.springframework.context.ApplicationContext;
 
+@Ignore
 public class TestApplication {
 
     public static void main(String[] args) {

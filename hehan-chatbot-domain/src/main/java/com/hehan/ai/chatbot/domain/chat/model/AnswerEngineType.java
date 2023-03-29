@@ -11,9 +11,9 @@ import lombok.Getter;
  */
 @AllArgsConstructor
 public enum AnswerEngineType {
-    DEFAULT("默认"),
-    OPEN_AI("OpenAI");
+    none("默认"),
+    openai("openai chatgpt");
     @Getter
-    private String name;
+    private final String name;
 
 }

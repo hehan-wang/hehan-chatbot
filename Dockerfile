@@ -17,6 +17,7 @@ ENV ZSXQ_COOKIE=你的星球Cookie
 ENV ZSXQ_GROUP_ID=你的星球id
 # 是否只提醒提问者
 ENV ZSXQ_SILENCED=true
+ENV SPRING_PROFILES_ACTIVE=prod
 
 # Run the web service on container startup.
 ENTRYPOINT ["java","-jar","/app/start/target/start-1.0-SNAPSHOT.jar"]

@@ -12,7 +12,7 @@
 
 知识星球演示：
 
-<img src="doc/%E6%98%9F%E7%90%83%E6%BC%94%E7%A4%BA.PNG" alt="星球展示" style="zoom:25%;" />
+<img src="doc/%E6%98%9F%E7%90%83%E6%BC%94%E7%A4%BA.PNG" alt="星球展示" width="50%;" heigh="50%" />
 
 ## 一键启动
 
@@ -102,6 +102,6 @@ scheduler:
 
 可以加入星球使劲向我提问哈~
 
-![星球](doc/%E6%98%9F%E7%90%83.jpeg)
+<img src="doc/%E6%98%9F%E7%90%83.jpeg" alt="星球展示" width="50%;" heigh="50%" />
 
-![QRcode_C1](doc/QRcode_C1.png)
+<img src="doc/QRcode_C1.png" alt="星球展示" width="50%;" heigh="50%" />

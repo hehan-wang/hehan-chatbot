@@ -1,7 +1,6 @@
 package com.hehan.ai.chatbot.web;
 
 import com.alibaba.cola.dto.Response;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

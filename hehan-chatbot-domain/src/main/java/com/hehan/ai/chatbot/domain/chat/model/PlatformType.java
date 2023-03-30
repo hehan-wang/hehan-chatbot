@@ -11,7 +11,7 @@ import lombok.Getter;
  */
 @AllArgsConstructor
 public enum PlatformType {
-    none("默认"),
+    demo("默认"),
     zsxq("知识星球"),
     ;
     @Getter

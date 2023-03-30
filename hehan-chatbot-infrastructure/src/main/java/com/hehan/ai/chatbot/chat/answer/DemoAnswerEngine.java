@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service
-public class DefaultAnswerEngine implements AnswerEngine {
+public class DemoAnswerEngine implements AnswerEngine {
     @Override
     public Answer doAnswer(Question question) {
         log.info("using default answer engine question:{}", question);
@@ -23,6 +23,6 @@ public class DefaultAnswerEngine implements AnswerEngine {
 
     @Override
     public AnswerEngineType getType() {
-        return AnswerEngineType.none;
+        return AnswerEngineType.demo;
     }
 }

@@ -12,7 +12,11 @@ zsxq:
   silenced: ${ZSXQ_SILENCED:true}
 scheduler:
   list:
-    - name: chatbot1
-      monitor: zsxq
-      answerer: openai
-      cron: '0/30 * * * * ?'
+#    - name: chatbotTask
+#      platform: zsxq
+#      answer: openai
+#      cron: '0/30 * * * * ?'
+    - name: demoTask
+      platform: demo
+      answer: demo
+      cron: '0/10 * * * * ?'

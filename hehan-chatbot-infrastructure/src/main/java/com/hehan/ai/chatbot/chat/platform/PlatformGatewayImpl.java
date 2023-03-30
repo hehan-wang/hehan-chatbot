@@ -44,6 +44,6 @@ public class PlatformGatewayImpl implements PlatformGateway {
     }
 
     public Platform getPlatform(PlatformType platformType) {
-        return platformMap.getOrDefault(platformType, platformMap.get(PlatformType.none));
+        return platformMap.getOrDefault(platformType, platformMap.get(PlatformType.demo));
     }
 }

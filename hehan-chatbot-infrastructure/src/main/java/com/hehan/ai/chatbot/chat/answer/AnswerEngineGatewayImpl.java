@@ -38,6 +38,6 @@ public class AnswerEngineGatewayImpl implements AnswerEngineGateway {
     }
 
     public AnswerEngine getAnswerEngine(AnswerEngineType answerEngineType) {
-        return answerEngineMap.getOrDefault(answerEngineType, answerEngineMap.get(AnswerEngineType.none));
+        return answerEngineMap.getOrDefault(answerEngineType, answerEngineMap.get(AnswerEngineType.demo));
     }
 }

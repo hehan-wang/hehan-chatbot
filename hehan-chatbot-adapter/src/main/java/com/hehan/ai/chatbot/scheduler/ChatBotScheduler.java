@@ -5,11 +5,11 @@ import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;
 import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -28,9 +28,10 @@ public class ChatBotScheduler implements SchedulingConfigurer {
 
     public Runnable doChat(SchedulerItem item) {
         return () -> {
-            log.info("do schedule begin");
-            ChatBot.create(item.getPlatform(), item.getAnswer()).doChat();
-            log.info("do schedule end");
+            long begin = System.currentTimeMillis();
+            log.info("do schedule begin:{}", LocalDateTime.now());
+            boolean result = ChatBot.create(item.getPlatform(), item.getAnswer()).doChat();
+            log.info("do schedule end result:{} cost:{} ms", result, System.currentTimeMillis() - begin);
         };
     }
 

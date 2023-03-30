@@ -17,7 +17,7 @@ import java.util.Collection;
  */
 @Slf4j
 @Service
-public class DefaultPlatform implements Platform {
+public class DemoPlatform implements Platform {
 
     @Override
     public Collection<Question> findQuestion() {
@@ -32,6 +32,6 @@ public class DefaultPlatform implements Platform {
 
     @Override
     public PlatformType getType() {
-        return PlatformType.none;
+        return PlatformType.demo;
     }
 }

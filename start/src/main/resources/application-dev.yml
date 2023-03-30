@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: ${SPRING_PROFILES_ACTIVE:prod}
   task:
     scheduling:
       pool:
@@ -16,11 +14,7 @@ zsxq:
   silenced: ${ZSXQ_SILENCED :true}
 scheduler:
   list:
-    - name: chatbotTask
-      platform: zsxq
-      answer: openai
-      cron: '0/30 * * * * ?'
-#    - name: demoTask
-#      platform: demo
-#      answer: demo
-#      cron: '0/10 * * * * ?'
+    - name: demoTask
+      platform: demo
+      answer: demo
+      cron: '0/10 * * * * ?'

@@ -5,7 +5,7 @@ MAINTAINER hehan
 # Copy local code to the container image.
 WORKDIR /app
 COPY pom.xml .
-COPY start/src ./src
+COPY . .
 
 # Build a release artifact.
 RUN mvn package -DskipTests
@@ -19,4 +19,4 @@ ENV ZSXQ_GROUP_ID=你的星球id
 ENV ZSXQ_SILENCED=true
 
 # Run the web service on container startup.
-ENTRYPOINT ["java","-jar","/app/target/start-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/app/start/target/start-1.0-SNAPSHOT.jar"]

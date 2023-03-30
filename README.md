@@ -54,7 +54,7 @@ scheduler:
 
 ## 一键部署
 
-[![Deploy on Railway](https://david-1255528809.cos.ap-beijing.myqcloud.com/uPic/2023-03-30/button.svg)](https://railway.app/template/D8TQ0B?referralCode=59QKWS)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/6-WHtb?referralCode=59QKWS)
 
 点这个就可以复制我们模板一键部署到Railway上，最重要的是不用担心科学上网的问题！
 

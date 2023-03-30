@@ -1,5 +1,6 @@
 package com.hehan.ai.chatbot.scheduler;
 
+import cn.hutool.core.util.RandomUtil;
 import com.hehan.ai.chatbot.domain.chat.model.ChatBot;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;

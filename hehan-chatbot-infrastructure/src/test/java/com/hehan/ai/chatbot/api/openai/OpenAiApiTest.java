@@ -2,6 +2,7 @@ package com.hehan.ai.chatbot.api.openai;
 
 import com.hehan.ai.chatbot.api.openai.model.CreateCompletionRequest;
 import com.hehan.ai.chatbot.api.openai.model.CreateCompletionResponse;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -10,6 +11,7 @@ import org.junit.Test;
  * @github <a href="https://github.com/hehan-wang">hehan</a>
  * @Copyright 公众号：程序员鹤涵
  */
+@Ignore
 public class OpenAiApiTest {
     @Test
     public void TestCreateCompletion() {

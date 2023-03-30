@@ -1,6 +1,8 @@
 package com.hehan.ai.chatbot.domain.chat.model;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.thread.ThreadUtil;
+import cn.hutool.core.util.RandomUtil;
 import com.alibaba.cola.domain.DomainFactory;
 import com.alibaba.cola.domain.Entity;
 import lombok.AllArgsConstructor;
@@ -38,12 +40,14 @@ public class ChatBot {
         //1.收到问题
         Collection<Question> questions = platform.findQuestion();
         if (CollUtil.isEmpty(questions)) {
-            log.error("question is null");
+            log.info("no question");
             return false;
         }
 
         for (Question question : questions) {
             //2.进行回答
+            // 问题之间随机暂停1-3s
+            ThreadUtil.sleep(1000L + RandomUtil.randomInt(0, 2000));
             Answer answer = answerEngine.doAnswer(question);
             if (answer == null) {
                 log.error("answer is null");

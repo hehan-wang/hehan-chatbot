@@ -19,5 +19,7 @@ ENV ZSXQ_GROUP_ID=你的星球id
 ENV ZSXQ_SILENCED=true
 ENV SPRING_PROFILES_ACTIVE=prod
 
+EXPOSE 8080
+
 # Run the web service on container startup.
 ENTRYPOINT ["java","-jar","/app/start/target/start-1.0-SNAPSHOT.jar"]

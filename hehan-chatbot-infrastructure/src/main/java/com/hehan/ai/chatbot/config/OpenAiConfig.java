@@ -1,6 +1,7 @@
 package com.hehan.ai.chatbot.config;
 
 import com.hehan.ai.chatbot.api.openai.model.ModelConstant;
+import com.plexpt.chatgpt.entity.chat.ChatCompletion;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -15,11 +16,10 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties(prefix = "openai")
 @Data
 public class OpenAiConfig {
-
     /**
      * 模型
      */
-    private String model = ModelConstant.TEXT_DAVINCI_003;
+    private String model = ChatCompletion.Model.GPT_3_5_TURBO.getName();
 
     /**
      * apiKey

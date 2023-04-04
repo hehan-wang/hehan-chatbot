@@ -8,7 +8,7 @@ spring:
 server:
   port: 8080
 openai:
-  model: ${OPENAI_MODEL:text-davinci-003}
+  model: ${OPENAI_MODEL:gpt-3.5-turbo}
   apiKey: ${OPENAI_API_KEY:你的apiKey}
 zsxq:
   cookie: ${ZSXQ_COOKIE:你的星球cookie}

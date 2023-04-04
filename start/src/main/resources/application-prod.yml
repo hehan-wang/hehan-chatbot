@@ -1,17 +1,3 @@
-spring:
-  task:
-    scheduling:
-      pool:
-        size: 5
-server:
-  port: 8080
-openai:
-  model: ${OPENAI_MODEL:text-davinci-003}
-  apiKey: ${OPENAI_API_KEY:你的apiKey}
-zsxq:
-  cookie: ${ZSXQ_COOKIE:你的星球cookie}
-  groupId: ${ZSXQ_GROUP_ID:你的星球id}
-  silenced: ${ZSXQ_SILENCED :true}
 scheduler:
   list:
     - name: chatbotTask

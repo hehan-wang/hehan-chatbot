@@ -11,7 +11,7 @@ COPY . .
 RUN mvn package -DskipTests
 
 # 声明环境变量，这样容器就可以在运行时访问它们
-ENV OPENAI_MODEL=text-davinci-003
+ENV OPENAI_MODEL=gpt-3.5-turbo
 ENV OPENAI_API_KEY=你的API_KEY
 ENV ZSXQ_COOKIE=你的星球Cookie
 ENV ZSXQ_GROUP_ID=你的星球id

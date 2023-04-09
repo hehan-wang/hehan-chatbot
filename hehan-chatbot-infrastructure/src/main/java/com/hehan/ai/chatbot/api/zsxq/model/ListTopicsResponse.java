@@ -17,6 +17,9 @@ public class ListTopicsResponse {
 
     private boolean succeeded;
 
+    private Integer code;
+    private String info;
+
     @Data
     public static class Group {
         private long groupId;

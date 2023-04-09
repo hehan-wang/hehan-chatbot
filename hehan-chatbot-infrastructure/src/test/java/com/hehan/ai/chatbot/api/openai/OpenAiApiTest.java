@@ -10,6 +10,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.stream.Collectors;
 
 /**
@@ -39,7 +40,7 @@ public class OpenAiApiTest {
         Message message = Message.of("写一段七言绝句诗，题目是：火锅！");
         ChatCompletion chatCompletion = ChatCompletion.builder()
                 .model(ChatCompletion.Model.GPT_3_5_TURBO.getName())
-                .messages(Arrays.asList(message))
+                .messages(Collections.singletonList(message))
                 .maxTokens(3000)
                 .temperature(0.9)
                 .build();

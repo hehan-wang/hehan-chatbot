@@ -85,15 +85,16 @@ scheduler:
 
 ![支持平台策略](doc/%E6%94%AF%E6%8C%81%E5%B9%B3%E5%8F%B0%E7%AD%96%E7%95%A5.png)
 
-1. domain层增加一个`AnswerEngineType`枚举
-2. infra层增加一个`AnswerEngine`实现类
+1. domain层增加一个`PlatformType`枚举
+2. infra层增加一个`Platform`实现类
 
 ### 支持回答模型拓展
 
 ![回答引擎策略](doc/%E5%9B%9E%E7%AD%94%E5%BC%95%E6%93%8E%E7%AD%96%E7%95%A5.png)
 
-1. domain层增加一个`PlatformType`枚举
-2. infra层增加一个`Platform`实现类
+1. domain层增加一个`AnswerEngineType`枚举
+2. infra层增加一个`AnswerEngine`实现类
+
 ## RoadMap
 
 - [ ] 增加敏感词过滤

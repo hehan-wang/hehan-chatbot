@@ -13,8 +13,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.util.Arrays;
-import java.util.stream.Collectors;
 
 /**
  * Spring Boot Starter

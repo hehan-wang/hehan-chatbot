@@ -94,12 +94,16 @@ scheduler:
 
 1. domain层增加一个`PlatformType`枚举
 2. infra层增加一个`Platform`实现类
+## RoadMap
+
+- [ ] 增加敏感词过滤
+- [ ] 接入微信群
 
 ## 欢迎交流
-后续会根据逐步完善，欢迎大家提出宝贵意见，也欢迎大家提issue pr，还有点赞❤️。
+后续会根据逐步完善，欢迎大家提出宝贵意见，也欢迎大家提issue pr，还有star⭐️。
 
 可以加入星球使劲向我提问哈~
 
-<img src="doc/星球.jpg" alt="星球展示" width="50%;" height="50%" />
+<img src="doc/星球.JPG" alt="星球展示" width="50%;" height="50%" />
 
 <img src="doc/QRcode_C1.png" alt="星球展示" width="50%;" height="50%" />

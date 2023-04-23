@@ -15,9 +15,19 @@
 ## 一键启动
 
 1. 修改`start`模块下的`application.yml`，或者通过**环境变量**的方式不用把密码硬编码在配置中
-   * 修改open-ai的apikey
-   * 修改知识星球的cookie
-   * 修改知识星球的id
+   * 获取open-ai的apikey(OPENAI_API_KEY)
+   
+   ![openai](doc/openai.jpg)
+   
+   * 邀请用户为嘉宾,获取知识星球的cookie(ZSXQ_COOKIE)
+   
+   ![星球cookie](doc/%E6%98%9F%E7%90%83cookie.jpg)
+   
+   * 获取知识星球的id(ZSXQ_GROUP_ID)
+   
+   ![星球groupid](doc/%E6%98%9F%E7%90%83groupid.jpg)
+
+将上面拿到的信息填入下面配置文件
 
 ```yaml
 spring:
@@ -98,13 +108,14 @@ scheduler:
 ## RoadMap
 
 - [ ] 增加敏感词过滤
+- [ ] 增加使用eventbus的方式处理消息
 - [ ] 接入微信群
 
 ## 欢迎交流
 后续会根据逐步完善，欢迎大家提出宝贵意见，也欢迎大家提issue pr，还有star⭐️。
 
-可以加入星球使劲向我提问哈~
+可以领取优惠加入星球使劲向我提问哈~
 
-<img src="doc/星球.JPG" alt="星球展示" width="50%;" height="50%" />
+<img src="doc/星球优惠券.png" alt="星球展示" width="50%;" height="50%" />
 
 <img src="doc/QRcode_C1.png" alt="星球展示" width="50%;" height="50%" />

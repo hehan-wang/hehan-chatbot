@@ -6,8 +6,8 @@ import com.plexpt.chatgpt.ChatGPT;
 import com.plexpt.chatgpt.entity.chat.ChatCompletion;
 import com.plexpt.chatgpt.entity.chat.ChatCompletionResponse;
 import com.plexpt.chatgpt.entity.chat.Message;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * @github <a href="https://github.com/hehan-wang">hehan</a>
  * @Copyright 公众号：程序员鹤涵
  */
-@Ignore
+@Disabled
 public class OpenAiApiTest {
     @Test
     public void TestCreateCompletion() {

@@ -1,9 +1,9 @@
 package com.hehan.ai.chatbot;
 
-import org.junit.Ignore;
+import org.junit.jupiter.api.Disabled;
 import org.springframework.boot.SpringApplication;
 
-@Ignore
+@Disabled
 public class TestApplication {
 
     public static void main(String[] args) {

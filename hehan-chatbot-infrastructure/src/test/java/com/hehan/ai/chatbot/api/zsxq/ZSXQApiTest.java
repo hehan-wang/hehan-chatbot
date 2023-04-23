@@ -5,8 +5,8 @@ import com.hehan.ai.chatbot.api.zsxq.model.AnswerRequest;
 import com.hehan.ai.chatbot.api.zsxq.model.AnswerResponse;
 import com.hehan.ai.chatbot.api.zsxq.model.ListTopicsRequest;
 import com.hehan.ai.chatbot.api.zsxq.model.ListTopicsResponse;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author 鹤涵，微信：hehan4096
@@ -14,7 +14,7 @@ import org.junit.Test;
  * @github <a href="https://github.com/hehan-wang">hehan</a>
  * @Copyright 公众号：程序员鹤涵
  */
-@Ignore
+@Disabled
 public class ZSXQApiTest {
     String cookie = "";
 

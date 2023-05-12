@@ -5,8 +5,8 @@ import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.RandomUtil;
 import com.alibaba.cola.domain.DomainFactory;
 import com.alibaba.cola.domain.Entity;
-import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Collection;
@@ -21,11 +21,12 @@ import java.util.Collection;
  */
 @Slf4j
 @Data
-@AllArgsConstructor(staticName = "of")
+@RequiredArgsConstructor(staticName = "of")
 @Entity
 public class ChatBot {
-    private Platform platform;
-    private AnswerEngine answerEngine;
+    private final Platform platform;
+    private final AnswerEngine answerEngine;
+
 
     public boolean doChat() {
         if (platform == null) {
@@ -51,8 +52,10 @@ public class ChatBot {
             Answer answer = answerEngine.doAnswer(question);
             if (answer == null) {
                 log.error("answer is null");
-                return false;
+                res = false;
+                continue;
             }
+            answer.setTopicId(question.getTopicId());
             //3.回复答案
             res &= platform.doReply(answer);
         }

@@ -54,14 +54,14 @@ public class OpenAiAnswerEngine implements AnswerEngine {
         ChatCompletion chatCompletion = ChatCompletion.builder()
                 .model(ChatCompletion.Model.GPT_3_5_TURBO.getName())
                 .messages(Collections.singletonList(message))
-                .maxTokens(3000)
+                .maxTokens(4096)
                 .temperature(0.9)
                 .build();
         ChatCompletionResponse chatCompletionResponse = chatGPT.chatCompletion(chatCompletion);
         String answer = chatCompletionResponse.getChoices().stream()
                 .map(e -> e.getMessage().getContent())
                 .collect(Collectors.joining());
-        return new Answer().setTopicId(question.getTopicId()).setContent(answer);
+        return new Answer().setContent(answer);
     }
 
     @Override
